@@ -95,39 +95,5 @@ public class Pizza_Dough extends GroceryStore implements Composition{
     double doughPcs_Price(){
         double doughPcs = totalDough_Weight() / 190;
         return this.totalDoughPrice() / doughPcs;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }
 }
