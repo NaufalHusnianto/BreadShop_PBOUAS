@@ -26,4 +26,15 @@ public class RotiManisV1 extends RotiManis_ToppingFilling{
         return rawPrice + profit * orderSum;
     }
     
+    void neededIngredients(){
+        System.out.println("Tepung terigu yang diperlukan : " + this.neededFlour * this.orderSum + " gr");
+        System.out.println("Gula yang diperlukan : " + this.neededSugar * this.orderSum + " gr");
+        System.out.println("Butter yang diperlukan : " + this.neededButter * this.orderSum + " gr");
+        System.out.println("Ragi yang diperlukan : " + this.neededYeast * this.orderSum + " gr");
+        System.out.println("Susu bubuk yang diperlukan : " + this.neededMilkPowder * this.orderSum + " gr");
+        System.out.println("Susu cair yang diperlukan : " + this.neededMilkLiquid * this.orderSum + " gr");
+        System.out.println("Telur yang diperlukan : " + this.neededEgg * this.orderSum + " gr");
+        System.out.println("Es yang diperlukan : " + this.neededIce * this.orderSum + " gr");
+    }
+    
 }

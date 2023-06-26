@@ -85,4 +85,15 @@ public class RotiManis_Dough extends GroceryStore implements Composition{
         double doughPcs = totalDough_Weight()/ 50;
         return this.totalDoughPrice() / doughPcs;
     }
+    
+    
+    // Needed dough per pcs
+    double neededFlour = 50 / this.totalDough_Weight() * this.flourComposition();
+    double neededSugar = 50 / this.totalDough_Weight() * this.sugarComposition();
+    double neededButter = 50 / this.totalDough_Weight() * this.butterComposition();
+    double neededYeast = 50 / this.totalDough_Weight() * this.yeastComposition();
+    double neededMilkPowder = 50 / this.totalDough_Weight() * this.milkPowderComposition();
+    double neededMilkLiquid = 50 / this.totalDough_Weight() * this.milkLiquidComposition();
+    double neededEgg = 50 / this.totalDough_Weight() * this.eggComposition();
+    double neededIce = 50 / this.totalDough_Weight() * this.iceComposition();
 }

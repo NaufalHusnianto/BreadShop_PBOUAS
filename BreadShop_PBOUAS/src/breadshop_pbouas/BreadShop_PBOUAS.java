@@ -15,6 +15,9 @@ public class BreadShop_PBOUAS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        RotiManisV1 a = new RotiManisV1();
+        a.orderSum = 47;
+        a.neededIngredients();
     }
     
 }
