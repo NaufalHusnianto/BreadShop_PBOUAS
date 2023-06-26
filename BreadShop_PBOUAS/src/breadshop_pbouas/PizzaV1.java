@@ -22,7 +22,6 @@ public class PizzaV1 extends Pizza_Topping {
         double profit = 0.4 * rawPrice;
         double pcsPrice = rawPrice + profit;
         System.out.println("________________________________________________________________________________");
-        System.out.println("________________________________________________________________________________");
         System.out.println("Biaya 1 pcs pizza varian 1 Rp." + pcsPrice);
         System.out.println("Biaya untuk " + this.orderSum + " pcs Pesanan pizza varian 1 Rp." + pcsPrice*this.orderSum);
         System.out.println("--------------------------------------------------------------------------------");

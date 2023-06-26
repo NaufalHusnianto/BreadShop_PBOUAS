@@ -25,7 +25,6 @@ public class RotiManisV2 extends RotiManis_ToppingFilling{
         double profit = 0.4 * rawPrice;
         double pcsPrice = rawPrice + profit;
         System.out.println("________________________________________________________________________________");
-        System.out.println("________________________________________________________________________________");
         System.out.println("Biaya 1 pcs roti manis varian 2 Rp." + pcsPrice);
         System.out.println("Biaya untuk " + this.orderSum + " pcs Pesanan Roti manis varian 1 Rp." + pcsPrice*this.orderSum);
         System.out.println("--------------------------------------------------------------------------------");

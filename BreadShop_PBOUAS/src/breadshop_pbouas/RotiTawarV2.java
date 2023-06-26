@@ -18,8 +18,7 @@ public class RotiTawarV2 extends RotiTawar_ToppingFilling{
         double HargaProduksi = this.doughPcs_Price() + this.filling();
         double harga = 1.4 * HargaProduksi;
         System.out.println("________________________________________________________________________________");
-        System.out.println("________________________________________________________________________________");
-        System.out.println("Biaya 1 pcs roti manis varian 2 Rp." + harga);
+        System.out.println("Biaya 1 pcs roti tawar varian 2 Rp." + harga);
         System.out.println("Biaya untuk " + this.order + " pcs Pesanan Roti manis varian 2 Rp." + harga*this.order);
         System.out.println("--------------------------------------------------------------------------------");
     }
