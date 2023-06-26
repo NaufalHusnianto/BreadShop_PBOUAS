@@ -20,31 +20,32 @@ public class RotiManisV1 extends RotiManis_ToppingFilling{
         return 5 * this.cheeseSum();
     }
     
-    double sellingPrice(){
+    void sellingPrice(){
         double rawPrice = this.doughPcs_Price() + this.filling() + this.topping();
         double profit = 0.4 * rawPrice;
-        return rawPrice + profit * orderSum;
+        double pcsPrice = rawPrice + profit;
+        System.out.println("________________________________________________________________________________");
+        System.out.println("________________________________________________________________________________");
+        System.out.println("Biaya 1 pcs roti manis varian 1 Rp." + pcsPrice);
+        System.out.println("Biaya untuk " + this.orderSum + " pcs Pesanan Roti manis varian 1 Rp." + pcsPrice*this.orderSum);
+        System.out.println("--------------------------------------------------------------------------------");
     }
     
     void neededIngredients(){
-        System.out.println("PERKIRAAN ADONAN ROTIMANIS YANG DIBUTUHKAN");
-        System.out.println("Tepung terigu yang diperlukan : " + this.neededFlour * this.orderSum + " gr");
-        System.out.println("Gula yang diperlukan : " + this.neededSugar * this.orderSum + " gr");
-        System.out.println("Butter yang diperlukan : " + this.neededButter * this.orderSum + " gr");
-        System.out.println("Ragi yang diperlukan : " + this.neededYeast * this.orderSum + " gr");
-        System.out.println("Susu bubuk yang diperlukan : " + this.neededMilkPowder * this.orderSum + " gr");
-        System.out.println("Susu cair yang diperlukan : " + this.neededMilkLiquid * this.orderSum + " gr");
-        System.out.println("Telur yang diperlukan : " + this.neededEgg * this.orderSum + " gr");
-        System.out.println("Es yang diperlukan : " + this.neededIce * this.orderSum + " gr");
+        System.out.println("Perkiraan bahan adonan roti manis varian 1 yang diperlukan :");
+        System.out.println("Tepung terigu : " + this.neededFlour * this.orderSum + " gr");
+        System.out.println("Gula : " + this.neededSugar * this.orderSum + " gr");
+        System.out.println("Butter : " + this.neededButter * this.orderSum + " gr");
+        System.out.println("Ragi : " + this.neededYeast * this.orderSum + " gr");
+        System.out.println("Susu Bubuk : " + this.neededMilkPowder * this.orderSum + " gr");
+        System.out.println("Susu Cair : " + this.neededMilkLiquid * this.orderSum + " gr");
+        System.out.println("Telur : " + this.neededEgg * this.orderSum + " gr");
+        System.out.println("Es Batu : " + this.neededIce * this.orderSum + " gr");
         System.out.println("--------------------------------------------------------------------------------");
-        System.out.println("PERKIRAAN TOPPING DAN FILLING ROTI MANIS YANG DIBUTUHKAN");
-        System.out.println("Keju yang diperlukan : " + this.neededCheese * this.orderSum + " gr");
-        System.out.println("Coklat yang diperlukan : " + this.neededChocolate * this.orderSum + " gr");
-        System.out.println("Krim Vanila yang diperlukan : " + this.neededVanillaCream * this.orderSum + " gr");
-        System.out.println("Selai Kacang Merah yang diperlukan : " + this.neededRedBeanJam * this.orderSum + " gr");
-        System.out.println("Sosis yang diperlukan : " + this.neededSausage * this.orderSum + " gr");
-        System.out.println("Smoked Beef yang diperlukan : " + this.neededSmokedBeef * this.orderSum + " gr");
-        System.out.println("Bawang Bombay yang diperlukan : " + this.neededOnion * this.orderSum + " gr");
+        System.out.println("Perkiraan topping dan filling roti manis Varian 1 yang diperlukan :");
+        System.out.println("Keju : " + 5*this.orderSum + " gr");
+        System.out.println("Coklat : " + 10*this.orderSum + " gr");
+        System.out.println("--------------------------------------------------------------------------------");
     }
     
 }

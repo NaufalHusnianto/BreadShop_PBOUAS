@@ -15,9 +15,20 @@ public class BreadShop_PBOUAS {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        RotiManisV1 a = new RotiManisV1();
-        a.orderSum = 50;
-        a.neededIngredients();
+        RotiManisV1 p1 = new RotiManisV1();
+        p1.orderSum = 50;
+        p1.sellingPrice();
+        p1.neededIngredients();
+        
+        RotiManisV2 p2 = new RotiManisV2();
+        p2.orderSum = 100;
+        p2.sellingPrice();
+        p2.neededIngredients();
+        
+        RotiManisV3 p3 = new RotiManisV3();
+        p3.orderSum = 70;
+        p3.sellingPrice();
+        p3.neededIngredients();
     }
     
 }

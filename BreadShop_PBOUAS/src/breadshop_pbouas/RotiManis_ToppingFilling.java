@@ -41,12 +41,4 @@ public class RotiManis_ToppingFilling extends RotiManis_Dough implements Filling
     public double onionSum(){
         return this.onionPrice / this.onionPack;
     }
-    
-    double neededCheese = 50 / this.totalDough_Weight() * this.flourComposition();
-    double neededChocolate = 50 / this.totalDough_Weight() * this.sugarComposition();
-    double neededVanillaCream = 50 / this.totalDough_Weight() * this.butterComposition();
-    double neededRedBeanJam = 50 / this.totalDough_Weight() * this.yeastComposition();
-    double neededSausage = 50 / this.totalDough_Weight() * this.flourComposition();
-    double neededSmokedBeef = 50 / this.totalDough_Weight() * this.sugarComposition();
-    double neededOnion = 50 / this.totalDough_Weight() * this.butterComposition();
 }
