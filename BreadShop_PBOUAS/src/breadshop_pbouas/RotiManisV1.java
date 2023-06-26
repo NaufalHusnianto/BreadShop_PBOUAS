@@ -27,6 +27,7 @@ public class RotiManisV1 extends RotiManis_ToppingFilling{
     }
     
     void neededIngredients(){
+        System.out.println("PERKIRAAN ADONAN ROTIMANIS YANG DIBUTUHKAN");
         System.out.println("Tepung terigu yang diperlukan : " + this.neededFlour * this.orderSum + " gr");
         System.out.println("Gula yang diperlukan : " + this.neededSugar * this.orderSum + " gr");
         System.out.println("Butter yang diperlukan : " + this.neededButter * this.orderSum + " gr");
@@ -35,6 +36,15 @@ public class RotiManisV1 extends RotiManis_ToppingFilling{
         System.out.println("Susu cair yang diperlukan : " + this.neededMilkLiquid * this.orderSum + " gr");
         System.out.println("Telur yang diperlukan : " + this.neededEgg * this.orderSum + " gr");
         System.out.println("Es yang diperlukan : " + this.neededIce * this.orderSum + " gr");
+        System.out.println("--------------------------------------------------------------------------------");
+        System.out.println("PERKIRAAN TOPPING DAN FILLING ROTI MANIS YANG DIBUTUHKAN");
+        System.out.println("Keju yang diperlukan : " + this.neededCheese * this.orderSum + " gr");
+        System.out.println("Coklat yang diperlukan : " + this.neededChocolate * this.orderSum + " gr");
+        System.out.println("Krim Vanila yang diperlukan : " + this.neededVanillaCream * this.orderSum + " gr");
+        System.out.println("Selai Kacang Merah yang diperlukan : " + this.neededRedBeanJam * this.orderSum + " gr");
+        System.out.println("Sosis yang diperlukan : " + this.neededSausage * this.orderSum + " gr");
+        System.out.println("Smoked Beef yang diperlukan : " + this.neededSmokedBeef * this.orderSum + " gr");
+        System.out.println("Bawang Bombay yang diperlukan : " + this.neededOnion * this.orderSum + " gr");
     }
     
 }
