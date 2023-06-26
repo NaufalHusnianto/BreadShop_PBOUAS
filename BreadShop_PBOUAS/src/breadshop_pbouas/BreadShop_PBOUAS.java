@@ -32,6 +32,12 @@ public class BreadShop_PBOUAS {
         p3.orderSum = 70;
         p3.sellingPrice();
         p3.neededIngredients();
+        
+        //PESANAN 6
+        PizzaV1 p6 = new PizzaV1();
+        p6.orderSum = 10;
+        p6.sellingPrice();
+        p6.neededIngredients();
     }
     
 }
