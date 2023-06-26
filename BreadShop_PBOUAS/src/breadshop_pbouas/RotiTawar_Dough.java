@@ -96,6 +96,14 @@ public class RotiTawar_Dough extends GroceryStore implements Composition{
         double doughPcs = totalDough_Weight() / 400;
         return this.totalDoughPrice() / doughPcs;
     }
-    
+     // Needed dough per pcs
+    double needFlour = 50 / this.totalDough_Weight() * this.flourComposition();
+    double needSugar = 50 / this.totalDough_Weight() * this.sugarComposition();
+    double needButter = 50 / this.totalDough_Weight() * this.butterComposition();
+    double needYeast = 50 / this.totalDough_Weight() * this.yeastComposition();
+    double needMilkPowder = 50 / this.totalDough_Weight() * this.milkPowderComposition();
+    double needMilkLiquid = 50 / this.totalDough_Weight() * this.milkLiquidComposition();
+    double needEgg = 50 / this.totalDough_Weight() * this.eggComposition();
+    double needIce = 50 / this.totalDough_Weight() * this.iceComposition();
     
 }
