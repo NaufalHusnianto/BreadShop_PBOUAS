@@ -4,10 +4,14 @@
  */
 package breadshop_pbouas;
 
-/**
- *
- * @author LENOVO
- */
-public class PizzaV1 {
+import Interfaces.FillingTopping;
+        
+        
+public abstract class PizzaV1 extends Pizza_Topping {
+    
+    double topping(){
+        return (30 * this.cheeseSum()) + (50 * this.sausageSum()) + (50 * this.smokedBeef()) + (50 * this.onionSum());
+       
+    }
     
 }

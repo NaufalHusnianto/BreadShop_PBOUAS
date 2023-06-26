@@ -12,8 +12,8 @@ import Interfaces.FillingTopping;
  */
 public abstract class Pizza_Topping extends Pizza_Dough implements FillingTopping {
 
-    private double sausageSum;
-    private double smokedBeef;
+     private double sausageSum;
+    private double smokedBeefSum;
     private double onionSum;
 
  @Override
@@ -28,7 +28,7 @@ public abstract class Pizza_Topping extends Pizza_Dough implements FillingToppin
 
     @Override
     public double smokedBeef() {
-        return this.smokedBeef / this.smokedBeefPack;
+        return this.smokedBeefSum / this.smokedBeefPack;
     }
 
     @Override

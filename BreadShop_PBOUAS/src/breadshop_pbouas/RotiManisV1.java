@@ -11,7 +11,7 @@ package breadshop_pbouas;
 public class RotiManisV1 extends RotiManis_ToppingFilling{
     //attributes
     int orderSum;
-    
+
     //roti manis varian 1 membutuhkan filling 5 gram cheese dan 5 gram chocolate
      double filling(){
         return (5 * this.cheeseSum()) + (5 * this.chocolateSum());
